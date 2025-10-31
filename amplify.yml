@@ -8,7 +8,7 @@ frontend:
         - pnpm install
     build:
       commands:
-        - pnpm run build   # this runs next build && next export
+        - pnpm run build
   artifacts:
     baseDirectory: out
     files:
