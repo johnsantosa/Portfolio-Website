@@ -8,7 +8,11 @@ frontend:
         - pnpm install
     build:
       commands:
-        - pnpm run build    # just next build
+        - pnpm run build
+  artifacts:
+    baseDirectory: out
+    files:
+      - '**/*'
   cache:
     paths:
       - node_modules/**/*
