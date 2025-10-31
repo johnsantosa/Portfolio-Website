@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint",
     "export": "next export"
@@ -27,6 +27,6 @@
     "typescript": "^5"
   },
   "engines": {
-    "node": "22.18.0"
+    "node": "23.7.0"
   } 
 }
