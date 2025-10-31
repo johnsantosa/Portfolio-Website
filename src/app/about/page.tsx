@@ -77,12 +77,12 @@ export default function AboutPage() {
           {[
             {
               h: "Sports",
-              p: "Play a lot of sports such as soccer (my favorite), badminton, padel, pool, and tennis. Also watch a lot of soccer games",
+              p: "Play a lot of sports such as soccer (my favorite), badminton, padel, pool, and tennis. Also watch a lot of soccer games.",
               img: "/images/hobbies/soccer.jpeg",
             },
             {
               h: "Music",
-              p: "Love playing music, and have recently been getting into DJ. Want to learn music production next",
+              p: "Love playing music, and have recently been getting into DJ. Want to learn music production next.",
               img: "/images/hobbies/music.jpg",
             },
             {

@@ -1,0 +1,21 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - corepack enable            # enables pnpm & yarn that come bundled with Node
+        - corepack prepare pnpm@latest --activate
+        - pnpm install
+    build:
+      commands:
+        - pnpm run build
+  artifacts:
+    # If you're using Next.js static export (next build && next export -> out/), set to 'out'
+    # If you're using Vite/React or Next.js standalone .next, adjust accordingly.
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+      - .pnpm-store/**/*
